@@ -17,13 +17,13 @@ public class SmeagolApplication {
 	}
 
 	@Bean
-	@ServiceActivator(inputChannel = "messageOutputChannel")
+	@ServiceActivator(inputChannel = "pubsubOutputChannel")
 	public MessageHandler messageSender(PubSubOperations pubsubTemplate) {
 		return new PubSubMessageHandler(pubsubTemplate, "message-bus");
 	}
 
 
-	@MessagingGateway(defaultRequestChannel = "messageOutputChannel")
+	@MessagingGateway(defaultRequestChannel = "pubsubOutputChannel")
 	public interface MessageOutboundGateway {
 		void sendToPubsub(String text);
 	}
