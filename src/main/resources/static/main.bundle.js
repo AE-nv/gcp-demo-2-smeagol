@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"smeagol\">\n  <img class=\"picture\" src=\"/assets/img/{{quote.speaker}}.jpeg\"/>\n  <div class=\"quote\">{{quote.quote}}</div>\n  <button class=\"refresh\" (click)=\"getQuote()\">Mr. Frodo! I don't trust him!</button>\n</div>\n"
+module.exports = "<div class=\"smeagol\">\n  <img class=\"picture\" src=\"/assets/img/{{quote.speaker}}.jpeg\"/>\n  <div class=\"quote\">{{quote.quote}}</div>\n  <button class=\"refresh\" (click)=\"getQuote()\">Mr. Frodo, I don't trust him!</button>\n</div>\n"
 
 /***/ }),
 
@@ -70,7 +70,7 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.getQuote = function () {
         var _this = this;
-        this.http.get('http://localhost:8080/quote').subscribe(function (data) {
+        this.http.get('/quote').subscribe(function (data) {
             console.log(data);
             _this.quote = data;
         });
