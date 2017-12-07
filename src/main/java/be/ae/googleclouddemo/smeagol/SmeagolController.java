@@ -5,19 +5,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import be.ae.googleclouddemo.smeagol.quote.QuoteService;
+import be.ae.googleclouddemo.smeagol.quote.SmeagolQuote;
 
 @Controller
 public class SmeagolController {
 
-	private final QuoteService service;
+	private QuoteService service;
 
 	public SmeagolController(QuoteService service) {
 		this.service = service;
 	}
 
-	@GetMapping
+	@GetMapping("quote")
 	@ResponseBody
-	public String greeting() {
+	public SmeagolQuote greeting() {
 		return service.randomQuote();
 	}
 }

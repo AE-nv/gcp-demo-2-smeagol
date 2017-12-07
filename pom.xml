@@ -21,8 +21,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<spring-cloud-gcp.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-gcp.version>
+		<java.speaker>1.8</java.speaker>
+		<spring-cloud-gcp.speaker>1.0.0.BUILD-SNAPSHOT</spring-cloud-gcp.speaker>
 	</properties>
 
 	<dependencyManagement>

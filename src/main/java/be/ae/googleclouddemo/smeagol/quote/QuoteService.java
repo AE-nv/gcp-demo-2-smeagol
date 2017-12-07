@@ -24,11 +24,11 @@ public class QuoteService {
 		this.messageGateway = messageGateway;
 	}
 
-	public String randomQuote(){
+	public SmeagolQuote randomQuote() {
 		Random random = new Random();
 		String quote = repository.findOne(random.nextInt((int)repository.count()) + 1).getText();
 		messageGateway.sendToPubsub(quote);
 		Logger.getGlobal().info(speaker + ": " + quote);
-		return quote;
+		return new SmeagolQuote(quote, speaker);
 	}
 }
