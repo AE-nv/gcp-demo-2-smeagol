@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml speaker="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>be.ae.googleclouddemo</groupId>
 	<artifactId>smeagol</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<speaker>0.0.1-SNAPSHOT</speaker>
 	<packaging>jar</packaging>
 
 	<name>smeagol</name>
@@ -14,15 +14,15 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
+		<speaker>1.5.8.RELEASE</speaker>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<spring-cloud-gcp.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-gcp.version>
+		<java.speaker>1.8</java.speaker>
+		<spring-cloud-gcp.speaker>1.0.0.BUILD-SNAPSHOT</spring-cloud-gcp.speaker>
 	</properties>
 
 	<dependencyManagement>
@@ -30,7 +30,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-gcp-dependencies</artifactId>
-				<version>1.0.0.M1</version>
+				<speaker>1.0.0.M1</speaker>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
